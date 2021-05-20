@@ -1,0 +1,58 @@
+{
+  "name": "__ADD NAME HERE__",
+  "version": "0.1.0",
+  "description": "__ADD DESCRIPTION HERE__",
+  "repository": {
+    "type": "git",
+    "url": "__ADD GIT REPO HERE__"
+  },
+  "main": "lib/index",
+  "types": "lib/index",
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "test": "mocha",
+    "watch": "mocha -w",
+    "build": "npx tsc -p .",
+    "build-docs": "typedoc --out docs src/index.ts --disableOutputCheck",
+    "prepublishOnly": "npm run build && npm run build-docs"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "mocha": {
+    "extension": [
+      "ts"
+    ],
+    "watch-files": [
+      "src/**/*.ts",
+      "test/**/*.ts"
+    ],
+    "require": "ts-node/register"
+  },
+  "author": "__YOUR NAME__ <__YOUR EMAIL ADDRESS__> (__YOUR WEBSITE__)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "eslint": "^7.25.0",
+    "lint-staged": "^10.5.4",
+    "mocha": "^8.4.0",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typedoc": "^0.20.36",
+    "typedoc-plugin-markdown": "^3.8.1",
+    "typescript": "^4.2.4"
+  }
+}
