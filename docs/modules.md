@@ -24,4 +24,4 @@ Use this function to create a greeting string with the given name
 
 **Returns:** *string*
 
-Defined in: index.ts:5
+Defined in: [index.ts:5](https://github.com/Antman261/npm-package-template/blob/f2945d1/src/index.ts#L5)
