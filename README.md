@@ -26,9 +26,9 @@ Now you can begin developing your package!
 
 ### GitHub Pages
 
-Hosting your docs on GitHub Pages makes it easier for people to read the full documentation for your package. TypeDoc will generate markdown for your JSDoc comments, which will then be parsed and rendered into HTML by GitHub's Jekyll engine on their pages server.
+Hosting your docs on GitHub Pages makes it easier to read the full documentation for your package. TypeDoc will generate markdown for your JSDoc comments. GitHub's Jekyll engine then parses and renders the markdown into HTML on their pages server.
 
-The following steps describe how to set up a GitHub Pages site for your package as a project site.
+Set up a GitHub Pages site for your package as a *project site* with the following steps:
 
 1. Follow the instructions in the [GitHub Pages Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) to set up Pages on your GitHub account or organisation if not already configured.
 1. Go to your repository for this package on GitHub and click `Settings`
@@ -38,7 +38,7 @@ The following steps describe how to set up a GitHub Pages site for your package 
 
 ### CircleCI
 
-This template includes a basic [CircleCI](https://circleci.com) config which will install dependencies and run tests. You can use this to ensure that pull requests from contributors pass tests.
+A basic [CircleCI](https://circleci.com) config is included in this template. It will install dependencies and run tests. Use this to ensure that pull requests from contributors pass tests.
 
 1. Login to [CircleCI](https://circleci.com) with GitHub
 1. Click "Projects"
@@ -58,4 +58,4 @@ You'll need to update the following files and properties to finish setting up yo
 * `LICENSE` -- Add your name to the copyright notice or replace with another license.
 * `README.md` -- Time to update the file you're reading! Add your own description and usage examples for your package.
 
-When you've completed the above, and you're ready to publish, `npm publish` will publish your package, complete with type definitions and docs.
+After completing the above you can use `npm publish` to publish your package, complete with type definitions and docs.
